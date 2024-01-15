@@ -1,0 +1,71 @@
+@import '../../sass/variables';
+@import '../../sass/animation';
+@import '../../sass/typography';
+@import '../../sass/component/button';
+@import '../../sass/mixins';
+
+
+// .content{
+//     // background-color: ;
+//     position: relative;
+//     height: 100vh;
+//     background-image: linear-gradient(to right bottom, rgba($primary-color, 0.9) 20%, rgba($secondary-color, 0.9) 70%),;
+//     background-size: cover;
+//     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+//     transform: translateY(-5%);
+//     &_row{
+//         // height: 100vh;
+//         transform: translateY(-5%);
+
+//         // height: 100;
+//         background-image: linear-gradient(to right bottom, rgba($primary-color, 0.9) 20%, rgba($secondary-color, 0.9) 70%),;
+//         clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content:space-around;
+// // transform: translateY(45%);
+//     }
+// }
+.content{
+   transform: translateY(-5%);
+   background-image: linear-gradient(to right bottom, rgba($primary-color, 0.9) 20%, rgba($secondary-color, 0.9) 70%),;
+   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:space-around;
+   padding-top: 30rem;
+   padding-bottom: 10rem;
+   gap: 3rem; 
+
+   @include respond (tab-port){
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+align-items: center;
+gap: 6rem; 
+
+
+
+
+   }
+   @include respond (phone){
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 10rem;
+    clip-path: none;
+    padding-top: 5rem;
+    transform: translateY(0.5%);
+    padding-bottom: 5rem;
+    background-image: none;
+
+    
+
+
+
+
+   }
+
+   
+
+}

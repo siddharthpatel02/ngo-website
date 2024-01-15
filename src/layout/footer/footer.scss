@@ -1,0 +1,75 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+
+.footer{
+    // height: 40vh;
+    // position: relative;
+    background-color: $primary-color;
+    margin-top: 5rem;
+    text-align: center;
+    color: $color-white;
+    padding-bottom: 3rem;
+    // font-family: $font-family-primary;
+
+    &__logo{
+        margin-top: 2rem;
+        height: 12rem;
+        margin-bottom: 0rem;
+    }
+    &__detail{
+        :last-child{
+            border-bottom: none;
+            margin-bottom: 0;
+            margin-top: 2rem;
+        }
+        &__address{
+            font-size: 1.3rem;
+            @include footer-details-style;
+            
+        }
+        &__other{
+            font-size: 1.2rem;
+            @include footer-details-style;
+         
+            
+        }
+    }
+        &__list{
+           
+            perspective: 1000px;
+            margin-top: 0.8rem;
+            border-bottom: 2px solid $color-white;
+            padding-bottom: 1rem;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        :not(:last-child){
+                margin-right: 2rem;
+            }
+&__item{
+    // perspective: 1;
+    cursor: default; 
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: $font-family-primary;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+    &:hover{
+        color: $color-white;
+        transform: skewY(-8deg);
+        box-shadow: 0 1.5rem 4rem rgba(#000000, 1.5);
+
+        
+
+    }
+}
+    }
+}
+.copyright{
+    // position: absolute;
+    // left: 78%;
+    // top: 90%;
+    // // border: none;
+}

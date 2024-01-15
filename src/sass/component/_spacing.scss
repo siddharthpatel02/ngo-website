@@ -1,0 +1,17 @@
+$default-margin: 16px;
+$small-margin: 8px;
+$medium-margin: 16px;
+$large-margin: 24px;
+
+.margin-top-default{
+    margin-top: $default-margin;
+}
+.margin-top-small{
+    margin-top: $small-margin;
+}
+.margin-top-medium{
+    margin-top: $medium-margin;
+}
+.margin-top-large{
+    margin-top: $large-margin;
+}

@@ -1,0 +1,40 @@
+@import "../../../sass/variables";
+.radio-btn{
+    display: inline-block;
+    &--input{
+        visibility: hidden;
+    }
+&--label{
+font-size:2rem;
+&--new-btn{
+    margin-right: 1rem;
+    display: inline-block;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    background-color: $color-white;
+    border: 0.4rem solid $primary-color;
+    transform: translateY(25%);
+    position: relative;
+
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 1.1rem;
+        width: 1.1rem;
+        border-radius: 50%;
+        background-color: $primary-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+    
+    }
+}
+}
+&--input:checked + &--label &--label--new-btn::after{
+    opacity: 1;
+}
+
+}

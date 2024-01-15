@@ -1,0 +1,84 @@
+@import "../variables";
+.form{
+   &__group{
+    margin-bottom: 1.2rem;
+    &--width{
+        width: 45%;
+        display: inline-block;
+    }
+    &--gap{
+      margin-right: 10%;
+    }
+   }
+   &__input{
+    // box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba($color-white,.7);
+    border: none;
+font-family: $font-family-primary;
+display: block;
+width: 100%;
+color: $color-black;
+// font-weight: 500;
+&:focus{
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    border-bottom: 3px solid $primary-color;
+    &:invalid{
+        border-bottom: 3px solid $color-invalid;
+    }
+}
+&::-webkit-input-placeholder{
+    color: $color-grey-light;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+
+
+
+}
+&::-webkit-outer-spin-button,
+&::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+&[type=number]{
+    -moz-appearance: textfield;
+}
+}
+&__label{
+    
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left:2rem ;
+    margin-top:.7rem ;
+    display: block;
+    transition: all .3s;
+
+}
+&__input:placeholder-shown + &__label {
+  opacity: 0;
+  visibility: hidden;
+transform: translateY(-4rem);
+}
+&__button{
+     height: 5rem;
+        width: 18rem;
+        border-radius: 3rem;
+        background-color:$primary-color ;
+        border-width: 0.1rem;
+        border-color: $primary-color;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: $font-family-primary;
+        color: $color-white;
+        letter-spacing: 0.8px;
+        border-style: double;
+        
+}
+
+}

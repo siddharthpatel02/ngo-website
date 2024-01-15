@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from "react";
+import "./App.scss";
+import Content from "./layout/content/content";
+import DonationForm from "./layout/DonationForm/donationForm";
+import Footer from "./layout/footer/footer";
+import Header from "./layout/header/header";
+import Introduction from "./layout/introduction/introduction";
 
 function App() {
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const aboutRef = useRef<HTMLFormElement | null>(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header formRef={formRef} isIncluded={false} />
+      <main>
+        <Introduction aboutRef={aboutRef} />
+        <Content formRef={formRef} />
+        <DonationForm formRef={formRef} />
+      </main>
+      <Footer aboutRef={aboutRef} formRef={formRef} />
     </div>
   );
 }

@@ -1,0 +1,31 @@
+@import "../../../sass/variables";
+.display_card{
+    height: 25rem;
+    width: 35rem;
+    // background-color: red;
+    // font-family:$font-family-primary ;
+  text-align: center;
+  &:hover{
+    .display_card-icon {
+        color:$primary-color;
+    }
+    .display_card-heading{
+        color:$primary-color;
+    }
+  }
+  &-icon{
+    color:$icon-color;
+    margin-bottom: 1.5rem;
+    }
+&-heading{
+    color: $heading-color;
+    margin-bottom: 0.6rem;
+    font-size: 1.5rem;
+
+}
+&-info{
+    font-size: 1.5rem;
+    font-style: normal;
+}
+  
+}
