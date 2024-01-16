@@ -19,7 +19,6 @@
         mix-blend-mode: multiply;
     }
     &__detail{
-       
         :last-child{
             border-bottom: none;
             margin-bottom: 0;
@@ -46,6 +45,9 @@
             width: 30%;
             margin-left: auto;
             margin-right: auto;
+            @include respond (phone){
+                width: 65%;
+            }
         :not(:last-child){
                 margin-right: 2rem;
             }
@@ -58,6 +60,7 @@
     font-family: $font-family-primary;
     transition: all 0.2s ease-in-out;
     font-weight: 600;
+    cursor: pointer;
     &:hover{
         color: $color-white;
         transform: skewY(-8deg);

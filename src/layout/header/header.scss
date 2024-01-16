@@ -25,6 +25,9 @@
    &__logo{
         height: 18rem;
         mix-blend-mode: multiply;
+        @include respond(phone){
+            height: 8rem;
+        }
 
     }
     &__text-box{
