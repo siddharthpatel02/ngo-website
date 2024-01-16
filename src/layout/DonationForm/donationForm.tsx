@@ -1,4 +1,4 @@
-import React, { HtmlHTMLAttributes, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import RadioButton from "../../components/button/radioButton/radioButton";
 import "./donationForm.scss";
 import { db } from "../../utility/firebase/firebase";

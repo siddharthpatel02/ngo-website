@@ -1,6 +1,6 @@
 import React from "react";
 import "./displayCard.scss";
-import { EggFried, IconProps } from "react-bootstrap-icons";
+import {IconProps } from "react-bootstrap-icons";
 
 const DisplayCard = ({
   heading,
