@@ -212,7 +212,7 @@ function DonationForm({
               className={"donation-container__form__radio-btn--item"}
               id="amount1"
               label="&#x20B9;
-              500/-"
+              500"
               name="amount"
               value={500}
             ></RadioButton>
