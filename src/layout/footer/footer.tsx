@@ -1,6 +1,6 @@
 import React from "react";
 import "../footer/footer.scss";
-import logo from "../../assets/favicon.png";
+import logo from "../../assets/ngologo.jpeg";
 import { ngoDetails } from "../../utility/constants";
 
 const Footer = ({

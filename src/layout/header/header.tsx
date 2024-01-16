@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/favicon.png";
+import logo from "../../assets/ngologo.jpeg";
 import "./header.scss";
 
 const Header = ({

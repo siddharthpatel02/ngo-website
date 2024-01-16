@@ -11,13 +11,15 @@
     color: $color-white;
     padding-bottom: 3rem;
     // font-family: $font-family-primary;
-
+   
     &__logo{
         margin-top: 2rem;
         height: 12rem;
         margin-bottom: 0rem;
+        mix-blend-mode: multiply;
     }
     &__detail{
+       
         :last-child{
             border-bottom: none;
             margin-bottom: 0;
@@ -66,10 +68,4 @@
     }
 }
     }
-}
-.copyright{
-    // position: absolute;
-    // left: 78%;
-    // top: 90%;
-    // // border: none;
 }
