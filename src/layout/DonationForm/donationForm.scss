@@ -4,6 +4,9 @@
 @import '../../sass/typography';
 @import '../../sass/component/button';
 @import '../../sass/component/form';
+@import '../../sass/component/spacing';
+
+
 
 
 .donation-container{
@@ -64,6 +67,10 @@ transform: translateX(12.5%);
         
         
 
+    }
+    &__submission{
+font-size: 2rem;       
+color: $secondary-color;
     }
 }
 

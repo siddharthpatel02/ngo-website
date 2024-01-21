@@ -16,6 +16,7 @@ function DonationForm({
   const [mobile, setMobile] = useState<string>("");
   const [pan, setPan] = useState<string>("");
   const [mobileValidation, setMobileValidation] = useState<boolean>(false);
+  const [isSubmitted, setSubmission] = useState(false);
 
   const radioButtonRef = useRef(null);
   const radioButtonRef2 = useRef(null);
@@ -71,7 +72,13 @@ function DonationForm({
       contact: mobile,
       timestamp: new Date().toString(),
     })
-      .then(() => resetValues())
+      .then(() => {
+        setTimeout(() => {
+          setSubmission(false);
+        }, 5000);
+        resetValues();
+        setSubmission(true);
+      })
       .catch((error) => console.error("Operation failed:", error));
   };
   const selectAmount = (amount: string) => {
@@ -252,6 +259,11 @@ function DonationForm({
             <button type="submit" className="form__button">
               submit
             </button>
+            {isSubmitted && (
+              <p className="donation-container__form__submission margin-top-default">
+                Request submitted successfully
+              </p>
+            )}
           </div>
         </form>
       </div>
